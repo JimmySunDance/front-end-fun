@@ -1,0 +1,55 @@
+html {
+    height:100%;
+}
+ 
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('./mountain.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 20rem;
+    width: 20rem;
+    backdrop-filter: blur(0.4rem);
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0.6rem 0.5rem 0.5rem rgb(0, 0, 0, 0.4);
+    border-radius: 0.7rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+ transform: scale(1.1);   
+ backdrop-filter: blur(0.7rem);
+ cursor: pointer;
+}
+
+.card h1 {
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 1.75rem;
+    margin-top: 2rem;
+}
+
+.card p {
+    color: rgb(255, 255, 255, 0.75);
+    padding: 0 1rem;
+}
+
+.card button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 0, 0.4);
+}
+
+.card button:hover {
+    background: rgb(255, 255, 255, 1);
+    cursor: pointer;
+}
